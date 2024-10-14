@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Dom</title>
+</head>
+<body>
+    <!-- <h1>Hello world</h1>
+    <h1>Good <span>morning</span> </h1>
+    <button onclick="piyush()">Click Here</button> -->
+    <label for="">Number 1</label>
+    <input type="text"><br>
+    <label for="">Number 2</label>
+    <input type="text"><br>
+    <label for="">result</label>
+    <input readonly type="text"><br>
+    <select onchange="calculate(value)" name="" id="">
+        <option disabled selected value="">Select Value</option>
+        <option value="add">addition</option>
+        <option value="sub">Subtract</option>
+        <option value="mul">multiply</option>
+        <option value="div">Divide</option>
+    </select>
+    
+
+</body>
+<script>
+    // // let piyush=()=>document.querySelector("h1").innerText="HI BITCH";
+    // let piyush=()=>document.getElementsByTagName("span")[0].style.color="green" 
+
+    let calculate=(value)=>{
+    let a=document.querySelectorAll("input")
+    if(value=="add"){
+    a[2].value=Number.parseInt(a[0].value)+Number.parseInt(a[1].value);}
+    else if(value=="sub"){
+    a[2].value=Number.parseInt(a[0].value)-Number.parseInt(a[1].value);}
+     else if(value=="mul"){
+    a[2].value=Number.parseInt(a[0].value)*Number.parseInt(a[1].value);}
+     else if(value=="div"){
+    a[2].value=Number.parseInt(a[0].value)/Number.parseInt(a[1].value);}
+}
+
+</script>
+
+</html>
